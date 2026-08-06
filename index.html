@@ -13,17 +13,22 @@
 <header class="site-nav">
   <div class="nav-inner">
     <a class="brand-mark" href="#top"><span class="dot"></span> SHEETAL</a>
-    <nav class="links">
-      <a href="#problem">Problem</a>
-      <a href="#solution">Solution</a>
-      <a href="#mechanism">How it Works</a>
-      <a href="#modeling">Modeling &amp; Results</a>
-      <a href="#prototype">Prototype</a>
-      <a href="#impact">Impact</a>
-      <a href="#business">Business</a>
-      <a href="#team">Team</a>
-    </nav>
-    <a class="btn nav-cta" href="https://sites.google.com/view/vinayarya" target="_blank" rel="noopener">Vinay Arya ↗</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="navCollapse">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="nav-collapse" id="navCollapse">
+      <nav class="links">
+        <a href="#problem">Problem</a>
+        <a href="#solution">Solution</a>
+        <a href="#mechanism">How it Works</a>
+        <a href="#modeling">Modeling &amp; Results</a>
+        <a href="#prototype">Prototype</a>
+        <a href="#impact">Impact</a>
+        <a href="#business">Business</a>
+        <a href="#team">Team</a>
+      </nav>
+      <a class="btn nav-cta" href="https://sites.google.com/view/vinayarya" target="_blank" rel="noopener">Vinay Arya ↗</a>
+    </div>
   </div>
 </header>
 
@@ -510,5 +515,24 @@
   </div>
 </footer>
 
+<script>
+  (function () {
+    var toggle = document.getElementById('navToggle');
+    var collapse = document.getElementById('navCollapse');
+    function closeMenu() {
+      collapse.classList.remove('open');
+      toggle.classList.remove('open');
+      toggle.setAttribute('aria-expanded', 'false');
+    }
+    toggle.addEventListener('click', function () {
+      var isOpen = collapse.classList.toggle('open');
+      toggle.classList.toggle('open', isOpen);
+      toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+    });
+    collapse.querySelectorAll('a').forEach(function (a) {
+      a.addEventListener('click', closeMenu);
+    });
+  })();
+</script>
 </body>
 </html>
