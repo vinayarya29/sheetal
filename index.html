@@ -1,0 +1,514 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SHEETAL — Hydrogel Condenser Cooling | Team MEGHDOOT, IIT Kharagpur</title>
+<meta name="description" content="SHEETAL: a passive PAM-LiCl hydrogel retrofit that pre-cools split AC condenser intake air, cutting compressor load without pumps, power, or plumbing. Team MEGHDOOT, IIT Kharagpur — Platinum Jubilee Innovation Challenge 2026.">
+<link rel="stylesheet" href="site-assets/style.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💧</text></svg>">
+</head>
+<body>
+
+<header class="site-nav">
+  <div class="nav-inner">
+    <a class="brand-mark" href="#top"><span class="dot"></span> SHEETAL</a>
+    <nav class="links">
+      <a href="#problem">Problem</a>
+      <a href="#solution">Solution</a>
+      <a href="#mechanism">How it Works</a>
+      <a href="#modeling">Modeling &amp; Results</a>
+      <a href="#prototype">Prototype</a>
+      <a href="#impact">Impact</a>
+      <a href="#business">Business</a>
+      <a href="#team">Team</a>
+    </nav>
+    <a class="btn nav-cta" href="https://sites.google.com/view/vinayarya" target="_blank" rel="noopener">Vinay Arya ↗</a>
+  </div>
+</header>
+
+<section class="hero" id="top">
+  <div class="wrap">
+    <span class="eyebrow">Platinum Jubilee Innovation Challenge 2026 · Round 2</span>
+    <h1><span>SHEETAL</span> — passive hydrogel cooling<br>for every split AC on campus</h1>
+    <p class="full-name">Sustainable Hydrogel-enabled Energy Efficient Thermal Augmentation for Air-conditioning Load reduction</p>
+    <p class="tagline">Indian innovation for energy-efficient cooling.</p>
+    <div class="hero-meta">
+      <span class="chip">Team MEGHDOOT</span>
+      <span class="chip">School of Energy Science &amp; Engineering, IIT Kharagpur</span>
+      <span class="chip">Mentor: Dr. Chirodeep Bakli</span>
+    </div>
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="#solution">See the Innovation</a>
+      <a class="btn btn-ghost" href="MEGHDOOT.pptx">Download Pitch Deck ↓</a>
+    </div>
+  </div>
+</section>
+
+<!-- PROBLEM -->
+<section id="problem">
+  <div class="wrap">
+    <p class="section-tag">Criterion 1 · Problem Significance</p>
+    <h2 class="section-title">The cooling problem at IIT Kharagpur</h2>
+    <p class="section-lead">Campus cooling is largely served by distributed split ACs, not centralised chilled water — and split AC efficiency degrades sharply in exactly the hot weather when cooling demand peaks.</p>
+
+    <div class="grid-4">
+      <div class="stat-card">
+        <div class="num">1000+</div>
+        <div class="label">Split AC units</div>
+        <div class="sub">Across faculty offices, labs, and hostels campus-wide</div>
+      </div>
+      <div class="stat-card">
+        <div class="num">15–25%</div>
+        <div class="label">Efficiency drop</div>
+        <div class="sub">In peak summer, when cooling demand is highest</div>
+      </div>
+      <div class="stat-card">
+        <div class="num">45°C</div>
+        <div class="label">Peak ambient temperature</div>
+        <div class="sub">Typical May–June conditions at Kharagpur</div>
+      </div>
+      <div class="stat-card">
+        <div class="num">₹ Crores</div>
+        <div class="label">Annual campus cooling cost</div>
+        <div class="sub">And growing every year as infrastructure expands</div>
+      </div>
+    </div>
+
+    <div class="callout" style="margin-top:36px;">
+      <h4>Why it matters</h4>
+      <p>The outdoor condenser must reject heat to increasingly hot ambient air, forcing the compressor to work harder — and consume more electricity — precisely when demand is highest. Replacing units is capital-intensive, and most efficiency upgrades need extra energy, water, or maintenance. Even a modest improvement applied across 1000+ units yields substantial cumulative savings and meaningful carbon reduction toward the Institute's net-zero goals.</p>
+    </div>
+  </div>
+</section>
+
+<!-- GAP ANALYSIS -->
+<section class="alt-bg">
+  <div class="wrap">
+    <p class="section-tag">The Gap SHEETAL Fills</p>
+    <h2 class="section-title">Why existing approaches fall short</h2>
+    <p class="section-lead">Every conventional fix trades one problem for another — capital cost, water demand, maintenance burden, or marginal impact.</p>
+
+    <div class="grid-4">
+      <div class="compare-card bad">
+        <h4>Replace with New Units</h4>
+        <ul>
+          <li>₹30–60K per unit</li>
+          <li>Major campus disruption</li>
+          <li>Creates e-waste</li>
+          <li>Not scalable</li>
+        </ul>
+      </div>
+      <div class="compare-card bad">
+        <h4>Continuous Water Spray</h4>
+        <ul>
+          <li>Needs pump + piping</li>
+          <li>Legionella / scaling risk</li>
+          <li>High water demand</li>
+          <li>Ongoing maintenance</li>
+        </ul>
+      </div>
+      <div class="compare-card bad">
+        <h4>Shade Structures / Films</h4>
+        <ul>
+          <li>Marginal gain (&lt; 3%)</li>
+          <li>Can block airflow</li>
+          <li>Structural load on wall</li>
+          <li>No active cooling</li>
+        </ul>
+      </div>
+      <div class="compare-card good">
+        <h4>SHEETAL (Our Innovation)</h4>
+        <ul>
+          <li>Completely passive</li>
+          <li>No pump / no power</li>
+          <li>Retrofit in &lt; 30 minutes</li>
+          <li>Est. 15–20% COP gain</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SOLUTION -->
+<section id="solution">
+  <div class="wrap">
+    <p class="section-tag">Criterion 2 · Originality &amp; Creativity</p>
+    <h2 class="section-title">SHEETAL: the proposed innovation</h2>
+    <p class="section-lead">A PAM-LiCl hydrogel panel that clips onto the air intake of any split AC outdoor condenser unit — no plumbing, no power, no structural change.</p>
+
+    <div class="result-cols">
+      <div>
+        <div class="grid-2" style="grid-template-columns:1fr;">
+          <div class="mat-card">
+            <div class="tag">Core mechanism</div>
+            <p style="margin:8px 0 0; font-size:0.95rem;">The hygroscopic hydrogel absorbs atmospheric moisture at night and releases it via evaporation during hot daytime periods, cooling condenser inlet air by <strong>4–10 °C</strong>.</p>
+          </div>
+        </div>
+        <div class="grid-2" style="grid-template-columns:1fr; margin-top:18px;">
+          <div class="mat-card">
+            <div class="tag">What makes it novel</div>
+            <p style="margin:8px 0 0; font-size:0.95rem;">Combines atmospheric water harvesting with desiccant cooling as a <strong>zero-energy AC retrofit</strong>. No prior commercial product packages these principles into a passive condenser pre-cooler.</p>
+          </div>
+        </div>
+        <div class="grid-2" style="grid-template-columns:1fr; margin-top:18px;">
+          <div class="mat-card">
+            <div class="tag">Key advantage</div>
+            <p style="margin:8px 0 0; font-size:0.95rem;">Completely passive — no pump, no water line, no external power, no structural change. Clips onto any condenser grille in under 30 minutes.</p>
+          </div>
+        </div>
+      </div>
+      <figure class="figure">
+        <img src="site-assets/images/system-diagram.png" alt="SHEETAL hydrogel evaporative cooling panel mounted on a split AC outdoor condenser unit, showing hot ambient air cooled before entering the coil">
+        <figcaption>SHEETAL panel retrofitted onto a standard split-AC outdoor condenser: hot intake air is pre-cooled by the hydrogel layer before reaching the coil.</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- MECHANISM -->
+<section class="alt-bg" id="mechanism">
+  <div class="wrap">
+    <p class="section-tag">Criterion 3 · Technical Feasibility</p>
+    <h2 class="section-title">Working mechanism: the day &amp; night cycle</h2>
+    <p class="section-lead">Like a desert beetle harvesting fog, SHEETAL runs a fully autonomous daily cycle — no valves, no controller, no intervention.</p>
+
+    <div class="cycle-grid">
+      <div class="cycle-card day">
+        <h4>☀️ Daytime — Evaporative Cooling Cycle</h4>
+        <ol>
+          <li>Hot ambient air (40–45 °C, RH 25–40%) sweeps the condenser intake.</li>
+          <li>Air passes through the PAM-LiCl hydrogel panel.</li>
+          <li>LiCl lowers the vapour pressure at the gel surface (a<sub>w</sub> ≈ 0.80).</li>
+          <li>Moisture evaporates from the gel into the airstream — latent heat is absorbed.</li>
+          <li>Condenser inlet air temperature drops 4–10 °C.</li>
+          <li>Cooler air improves heat rejection → lower compressor head pressure.</li>
+          <li>Compressor power reduces → lower electricity draw → higher COP.</li>
+        </ol>
+      </div>
+      <div class="cycle-card night">
+        <h4>🌙 Night — Autonomous Regeneration Cycle</h4>
+        <ol>
+          <li>Temperature drops (25–32 °C), relative humidity rises (60–80%).</li>
+          <li>Gel equilibrium RH ≈ 80% (for 30 wt% LiCl) — below ambient RH.</li>
+          <li>Atmospheric moisture flows into the gel — spontaneous adsorption.</li>
+          <li>The PAM matrix swells, storing water for the next day's cycle.</li>
+          <li>No pump, no valve, no active control — fully autonomous.</li>
+          <li>Hydrogel is fully recharged by morning.</li>
+          <li>The cycle repeats, every single day.</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MATERIAL SCIENCE -->
+<section>
+  <div class="wrap">
+    <p class="section-tag">Criterion 3 · Scientific Soundness</p>
+    <h2 class="section-title">PAM-LiCl hydrogel: material selection rationale</h2>
+    <p class="section-lead">Every material property is chosen against literature-anchored evidence, not guesswork.</p>
+
+    <div class="grid-3">
+      <div class="mat-card">
+        <div class="tag">Water Activity (a<sub>w</sub>)</div>
+        <div class="val">0.75 – 0.85</div>
+        <p style="margin:0 0 6px; font-size:0.88rem;">at 30 wt% LiCl — equilibrium RH 75–85%, enabling evaporation whenever ambient RH &lt; 80%.</p>
+        <div class="ref">Conde (2004), Int. J. Refrig.</div>
+      </div>
+      <div class="mat-card">
+        <div class="tag">Water Uptake</div>
+        <div class="val">&gt; 5 g/g</div>
+        <p style="margin:0 0 6px; font-size:0.88rem;">grams water per gram polymer — a thin 3 mm panel holds enough water for 15–50 h of continuous cooling.</p>
+        <div class="ref">PAM hydrogel, literature-calibrated</div>
+      </div>
+      <div class="mat-card">
+        <div class="tag">Evaporation Rate</div>
+        <div class="val">~50 µg/m²·s</div>
+        <p style="margin:0 0 6px; font-size:0.88rem;">Analytical estimate at 45 °C, RH 30% — surface cooling of 4–10 K.</p>
+        <div class="ref">In-house analytical model</div>
+      </div>
+      <div class="mat-card">
+        <div class="tag">Self-Regeneration</div>
+        <div class="val">&gt; 500 cycles</div>
+        <p style="margin:0 0 6px; font-size:0.88rem;">Absorbs moisture from humid night air passively — no cartridge replacement.</p>
+        <div class="ref">Li et al. (2018), Nat. Commun.</div>
+      </div>
+      <div class="mat-card">
+        <div class="tag">Synthesis &amp; Cost</div>
+        <div class="val">₹250–300 / unit</div>
+        <p style="margin:0 0 6px; font-size:0.88rem;">Free-radical polymerisation of AAm + MBA, LiCl impregnation post-gelation — scalable to sheet format.</p>
+        <div class="ref">Low-cost, campus-manufacturable</div>
+      </div>
+      <div class="mat-card">
+        <div class="tag">Design Reference</div>
+        <div class="val">Zhao et al.</div>
+        <p style="margin:0 0 6px; font-size:0.88rem;">Hygroscopic hydrogel sorbents for atmospheric water harvesting — principle basis for the regeneration cycle.</p>
+        <div class="ref">Zhao et al. (2019), Sci. Adv.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MODELING & RESULTS -->
+<section class="alt-bg" id="modeling">
+  <div class="wrap">
+    <p class="section-tag">Criterion 3 · Technical Feasibility &amp; Scientific Soundness</p>
+    <h2 class="section-title">Modeling, simulation &amp; results</h2>
+    <p class="section-lead">The design was selected through a reduced-order model coupling moist-air psychrometrics, Churchill–Bernstein convection, and Chilton–Colburn mass-transfer analogies across sequential mesh layers, cross-checked against wire-level CFD.</p>
+
+    <div class="kpi-strip">
+      <div class="kpi"><div class="v">4.4 K</div><div class="l">Condenser inlet ΔT (base case, 40 cm panel)</div></div>
+      <div class="kpi"><div class="v">~20%</div><div class="l">Idealized COP gain (Carnot-based)</div></div>
+      <div class="kpi"><div class="v">6.2 / 6.0</div><div class="l">Nu / Sh (Graetz correlation)</div></div>
+      <div class="kpi"><div class="v">15–50 h</div><div class="l">Panel endurance before night recharge</div></div>
+      <div class="kpi"><div class="v">99.6%</div><div class="l">Pressure-drop cut vs. baseline mesh</div></div>
+    </div>
+
+    <div class="result-cols">
+      <figure class="figure">
+        <img src="site-assets/images/cfd-case-schematic.png" alt="CFD case setup showing mesh geometry, governing equations, and flow scenario for the hydrogel mesh screen">
+        <figcaption>CFD case setup: mesh geometry, governing correlations (Churchill–Bernstein, Chilton–Colburn, Idelchik), and predicted flow scenario.</figcaption>
+      </figure>
+      <figure class="figure">
+        <img src="site-assets/images/cfd-wire-flow.png" alt="Wire-level CFD simulation showing flow streamlines and temperature field around a single PAM-LiCl coated mesh wire">
+        <figcaption>Wire-level CFD: flow streamlines and temperature field around a single PAM-LiCl coated mesh wire in cross-flow.</figcaption>
+      </figure>
+    </div>
+
+    <div class="result-cols" style="margin-top:24px;">
+      <figure class="figure">
+        <img src="site-assets/images/pareto-map.png" alt="Pareto design map trading off pressure drop, net power saving, and water consumption across thousands of candidate mesh geometries">
+        <figcaption>Multi-objective design sweep across mesh wire diameter and pitch — the recommended prototype sits on the Pareto front, minimising pressure drop for a given power saving.</figcaption>
+      </figure>
+      <figure class="figure">
+        <img src="site-assets/images/baseline-vs-prototype.png" alt="Bar chart comparing no-mesh, original mesh, and optimized prototype across cooling drop, COP gain, pressure drop, water use, and fan power">
+        <figcaption>Optimized prototype vs. baseline mesh: retains most of the cooling benefit while cutting pressure drop by 99.6% and fan power by ~98.5%.</figcaption>
+      </figure>
+    </div>
+
+    <div class="callout">
+      <h4>Scientific honesty: idealized vs. audited estimates</h4>
+      <p>The <strong>15–20% COP improvement</strong> figure quoted throughout this project is the idealized, Carnot-based potential of the condenser inlet temperature drop achieved by the hydrogel layer. Because it matters more to us to be right than to look good, we ran a full internal audit of the reduced-order model before presenting it.</p>
+      <p>Applying a conservative <strong>50% realization factor</strong> — to account for real compressor isentropic losses, wire-overlap wake shielding, and imperfect gel coating coverage — the audited model predicts a more cautious <strong>2.07% realized COP gain (18.8 W net saving)</strong> for the recommended prototype geometry, with a Monte-Carlo parameter-variation study (see figure below) showing this is robust across plausible calibration ranges. Our internal review issued a <em>conditional go</em>: the model is valid for comparative and feasibility screening, but absolute power-saving claims require experimental wind-tunnel and field validation — which is exactly what Phase 1–2 of our prototype plan below is designed to deliver.</p>
+    </div>
+
+    <div class="result-cols">
+      <figure class="figure">
+        <img src="site-assets/images/uncertainty-tornado.png" alt="Tornado chart showing sensitivity of net AC system power saving to transfer effectiveness, active coating fraction, and other calibration parameters">
+        <figcaption>Monte-Carlo parameter-variation study: net power saving stays positive (10.9–26.2 W) across the full plausible range of every uncalibrated parameter.</figcaption>
+      </figure>
+      <figure class="figure">
+        <img src="site-assets/images/climate-strategy.png" alt="Climate operating strategy map showing net cooling benefit across ambient temperature and relative humidity conditions">
+        <figcaption>Climate operating map: net benefit across the ambient temperature / relative humidity space relevant to Indian summer conditions.</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- PROTOTYPE / TRL -->
+<section id="prototype">
+  <div class="wrap">
+    <p class="section-tag">Criterion 5 · Prototype Quality &amp; Development Stage</p>
+    <h2 class="section-title">Prototype design &amp; experimental validation plan</h2>
+    <p class="section-lead">SHEETAL is currently at TRL 2, with a fully audited model in hand and a concrete path to lab and field validation.</p>
+
+    <div class="trl-ladder">
+      <div class="trl-row done"><div class="trl-badge">Done</div><div class="trl-bar">Basic principles observed</div></div>
+      <div class="trl-row done"><div class="trl-badge">Done</div><div class="trl-bar">Technology concept formulated</div></div>
+      <div class="trl-row next"><div class="trl-badge">TRL 3</div><div class="trl-bar">Experimental proof-of-concept (next 2 weeks)</div></div>
+      <div class="trl-row future"><div class="trl-badge">TRL 4</div><div class="trl-bar">Lab-scale validation</div></div>
+      <div class="trl-row future"><div class="trl-badge">TRL 5</div><div class="trl-bar">Relevant environment test</div></div>
+      <div class="trl-row future"><div class="trl-badge">TRL 6</div><div class="trl-bar">Prototype demo in situ</div></div>
+      <div class="trl-row future"><div class="trl-badge">TRL 7</div><div class="trl-bar">System prototype operational</div></div>
+      <div class="trl-row future"><div class="trl-badge">TRL 8</div><div class="trl-bar">System complete &amp; qualified</div></div>
+      <div class="trl-row future"><div class="trl-badge">TRL 9</div><div class="trl-bar">Deployment proven</div></div>
+    </div>
+
+    <div class="phase-grid">
+      <div class="phase-card">
+        <div class="n">Phase 1</div>
+        <h5>Hydrogel Synthesis</h5>
+        <p>Synthesise PAM-LiCl sheets (30 wt% LiCl). Measure water uptake, a<sub>w</sub>, and evaporation rate at 35–45 °C in lab.</p>
+      </div>
+      <div class="phase-card">
+        <div class="n">Phase 2</div>
+        <h5>Bench Channel Test</h5>
+        <p>Lab-scale air channel (40×20 mm) with heater + hygrometer. Measure ΔT and j<sub>evap</sub>, validate against the analytical model.</p>
+      </div>
+      <div class="phase-card">
+        <div class="n">Phase 3</div>
+        <h5>Condenser Mockup</h5>
+        <p>Aluminium frame + gel panel sized for a standard 1.5T split AC (800×550 mm face). Test fit and pressure drop.</p>
+      </div>
+      <div class="phase-card">
+        <div class="n">Phase 4</div>
+        <h5>Field Trial (SESE Building)</h5>
+        <p>Install on 2–3 AC units. Log compressor current, power, and indoor temperature over 2–4 weeks against controls.</p>
+      </div>
+    </div>
+    <p class="section-lead" style="margin-top:24px; margin-bottom:0;"><strong>Key metrics tracked:</strong> ΔT<sub>condenser</sub>, ΔW<sub>compressor</sub>, COP before vs. after, gel recharge time, daily water balance.</p>
+  </div>
+</section>
+
+<!-- IMPACT -->
+<section class="alt-bg" id="impact">
+  <div class="wrap">
+    <p class="section-tag">Criterion 4 · Impact Potential</p>
+    <h2 class="section-title">How big can this get?</h2>
+    <p class="section-lead">From a single campus building to hundreds of millions of split AC units across the Global South.</p>
+
+    <div class="grid-4">
+      <div class="impact-card">
+        <h4>IIT KGP Campus</h4>
+        <div class="sub">~1,000 split AC units</div>
+        <ul>
+          <li>20% COP improvement potential</li>
+          <li>15–25% electricity saving on AC load</li>
+          <li>Meaningful carbon reduction</li>
+          <li>Visible net-zero contribution</li>
+        </ul>
+      </div>
+      <div class="impact-card">
+        <h4>Indian Campuses</h4>
+        <div class="sub">1,000+ universities / IITs / NITs</div>
+        <ul>
+          <li>Millions of split AC units</li>
+          <li>Procurement via sustainability MoU</li>
+          <li>Replicable IIT Kharagpur model</li>
+          <li>Aligns with central green-campus push</li>
+        </ul>
+      </div>
+      <div class="impact-card">
+        <h4>Indian Residential</h4>
+        <div class="sub">300 million+ AC units in India</div>
+        <ul>
+          <li>World's fastest-growing AC market</li>
+          <li>No infrastructure change needed</li>
+          <li>Works on any split AC brand</li>
+          <li>Affordable retrofit for all</li>
+        </ul>
+      </div>
+      <div class="impact-card">
+        <h4>Global South</h4>
+        <div class="sub">Hot &amp; humid tropical climates</div>
+        <ul>
+          <li>Maximum benefit in hot countries</li>
+          <li>No grid power required</li>
+          <li>Climate-adaptation technology</li>
+          <li>Aligns with SDG 7 &amp; SDG 13</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BUSINESS -->
+<section id="business">
+  <div class="wrap">
+    <p class="section-tag">Criterion 6 · Business &amp; Implementation Viability</p>
+    <h2 class="section-title">Path to deployment</h2>
+    <p class="section-lead">Estimated unit economics and a four-phase go-to-market strategy, from campus pilot to consumer retail.</p>
+
+    <table class="econ">
+      <tr><th>Metric</th><th>Estimate</th></tr>
+      <tr><td>Material cost (per unit)</td><td class="v">₹250–300</td></tr>
+      <tr><td>Frame + fitting hardware</td><td class="v">₹200–250</td></tr>
+      <tr><td>Total manufacturing cost</td><td class="v">~₹500</td></tr>
+      <tr><td>Retail price (2× markup)</td><td class="v">~₹1,000</td></tr>
+      <tr><td>Annual electricity saving</td><td class="v">₹1,500–4,000</td></tr>
+      <tr><td>Simple payback period</td><td class="v">&lt; 6 months</td></tr>
+      <tr><td>Panel lifespan</td><td class="v">&gt; 3 years (est.)</td></tr>
+      <tr><td>ROI over 3 years</td><td class="v">4–10× investment</td></tr>
+    </table>
+
+    <div class="timeline">
+      <div class="tl-card">
+        <div class="t">Phase 1 · 0–6 months</div>
+        <h5>Campus Pilot</h5>
+        <p>Install on 50 AC units at IIT KGP. Publish performance data. Build credibility with real numbers.</p>
+      </div>
+      <div class="tl-card">
+        <div class="t">Phase 2 · 6–18 months</div>
+        <h5>Institute Network</h5>
+        <p>License to 10 IITs / NITs via campus sustainability procurement MoU.</p>
+      </div>
+      <div class="tl-card">
+        <div class="t">Phase 3 · 18–36 months</div>
+        <h5>B2B Channel</h5>
+        <p>Partner with AC service companies as an add-on retrofit product.</p>
+      </div>
+      <div class="tl-card">
+        <div class="t">Phase 4 · 3+ years</div>
+        <h5>Consumer Retail</h5>
+        <p>D2C via e-commerce. Self-install kit format with an annual refill-cartridge subscription.</p>
+      </div>
+    </div>
+    <p class="section-lead" style="margin-top:24px; margin-bottom:0;"><strong>Revenue model:</strong> product sale + annual refill subscription, with institutional bulk pricing for colleges and housing societies.</p>
+  </div>
+</section>
+
+<!-- TEAM -->
+<section class="alt-bg" id="team">
+  <div class="wrap">
+    <p class="section-tag">Team MEGHDOOT</p>
+    <h2 class="section-title">Who's behind SHEETAL</h2>
+    <p class="section-lead">School of Energy Science and Engineering, IIT Kharagpur.</p>
+
+    <div class="grid-4">
+      <div class="team-card">
+        <div class="avatar">VA</div>
+        <h4>Vinay Arya</h4>
+        <div class="role">Institute Post-Doctoral Fellow</div>
+        <div class="id">20ES91R07</div>
+        <a href="mailto:vinayarya@kgpian.iitkgp.ac.in">vinayarya@kgpian.iitkgp.ac.in</a>
+      </div>
+      <div class="team-card">
+        <div class="avatar">VC</div>
+        <h4>Vikash Chandra</h4>
+        <div class="role">PhD Scholar, SESE</div>
+        <div class="id">22ES92R03</div>
+        <a href="mailto:vikash.es@kgpian.iitkgp.ac.in">vikash.es@kgpian.iitkgp.ac.in</a>
+      </div>
+      <div class="team-card">
+        <div class="avatar">AK</div>
+        <h4>Aman Kumar</h4>
+        <div class="role">M.Tech Student, SESE</div>
+        <div class="id">25ES60R03</div>
+        <a href="mailto:aman1825@kgpian.iitkgp.ac.in">aman1825@kgpian.iitkgp.ac.in</a>
+      </div>
+      <div class="team-card">
+        <div class="avatar">SK</div>
+        <h4>Shivam Kumar</h4>
+        <div class="role">M.Tech Student, SESE</div>
+        <div class="id">25ES60R11</div>
+        <a href="mailto:kshivam511725@kgpian.iitkgp.ac.in">kshivam511725@kgpian.iitkgp.ac.in</a>
+      </div>
+    </div>
+
+    <div class="mentor-strip">
+      <strong>Mentor —</strong>
+      <span>Dr. Chirodeep Bakli, Associate Professor, School of Energy Science &amp; Engineering, IIT Kharagpur</span>
+      <a href="mailto:cbakli@iitkgp.ac.in">cbakli@iitkgp.ac.in</a>
+    </div>
+
+    <p class="closing-line" style="margin-top:44px;">SHEETAL is not just an idea — it is a thermodynamically grounded, low-cost, and passively scalable solution ready to begin deployment within IIT Kharagpur this academic year.</p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a href="MEGHDOOT.pptx">Pitch Deck (.pptx)</a>
+      </div>
+      <div>
+        <a href="mailto:vinayarya@kgpian.iitkgp.ac.in">Contact the Team</a>
+      </div>
+    </div>
+    <p>© 2026 Team MEGHDOOT — School of Energy Science and Engineering, IIT Kharagpur. Built for the Platinum Jubilee Innovation Challenge.</p>
+  </div>
+</footer>
+
+</body>
+</html>
