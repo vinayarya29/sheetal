@@ -545,10 +545,18 @@ table.econ td.v { font-weight: 700; color: var(--brand); }
   display: flex;
   flex-wrap: wrap;
   gap: 6px 18px;
-  align-items: baseline;
+  align-items: center;
 }
 .mentor-strip strong { color: var(--brand-dark); }
 .mentor-strip span { color: var(--ink-soft); font-size: 0.88rem; }
+.mentor-avatar {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex: none;
+  box-shadow: 0 0 0 3px var(--bg-alt), 0 0 0 4px var(--line);
+}
 
 /* ---------- Footer ---------- */
 footer {

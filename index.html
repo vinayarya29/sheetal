@@ -5,6 +5,20 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>SHEETAL — Hydrogel Condenser Cooling | Team MEGHDOOT, IIT Kharagpur</title>
 <meta name="description" content="SHEETAL: a passive PAM-LiCl hydrogel retrofit that pre-cools split AC condenser intake air, cutting compressor load without pumps, power, or plumbing. Team MEGHDOOT, IIT Kharagpur — Platinum Jubilee Innovation Challenge 2026.">
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://vinayarya29.github.io/sheetal/">
+<meta property="og:title" content="SHEETAL — Passive Hydrogel Cooling for Every Split AC on Campus">
+<meta property="og:description" content="A passive PAM-LiCl hydrogel retrofit that pre-cools split AC condenser intake air, cutting compressor load without pumps, power, or plumbing. Team MEGHDOOT, IIT Kharagpur — Platinum Jubilee Innovation Challenge 2026.">
+<meta property="og:image" content="https://vinayarya29.github.io/sheetal/site-assets/images/og-preview.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="SHEETAL — Passive Hydrogel Cooling for Every Split AC on Campus">
+<meta name="twitter:description" content="A passive PAM-LiCl hydrogel retrofit that pre-cools split AC condenser intake air, cutting compressor load without pumps, power, or plumbing.">
+<meta name="twitter:image" content="https://vinayarya29.github.io/sheetal/site-assets/images/og-preview.png">
+
 <link rel="stylesheet" href="site-assets/style.css">
 <link rel="icon" type="image/png" href="site-assets/images/favicon.png">
 </head>
@@ -299,7 +313,7 @@
   <div class="wrap">
     <p class="section-tag">Criterion 3 · Technical Feasibility &amp; Scientific Soundness</p>
     <h2 class="section-title">Modeling, simulation &amp; results</h2>
-    <p class="section-lead">The design was selected through a reduced-order model coupling moist-air psychrometrics, Churchill–Bernstein convection, and Chilton–Colburn mass-transfer analogies across sequential mesh layers, cross-checked against wire-level CFD.</p>
+    <p class="section-lead">The design was selected through a reduced-order model coupling moist-air psychrometrics, Zukauskas wire-bank convection, and Chilton–Colburn mass-transfer analogies across sequential mesh layers.</p>
 
     <div class="kpi-strip">
       <div class="kpi"><div class="v">4.4 K</div><div class="l">Condenser inlet ΔT (base case, 40 cm panel)</div></div>
@@ -310,17 +324,6 @@
     </div>
 
     <div class="result-cols">
-      <figure class="figure">
-        <img src="site-assets/images/cfd-case-schematic.png" alt="CFD case setup showing mesh geometry, governing equations, and flow scenario for the hydrogel mesh screen">
-        <figcaption>CFD case setup: mesh geometry, governing correlations (Churchill–Bernstein, Chilton–Colburn, Idelchik), and predicted flow scenario.</figcaption>
-      </figure>
-      <figure class="figure">
-        <img src="site-assets/images/cfd-wire-flow.png" alt="Wire-level CFD simulation showing flow streamlines and temperature field around a single PAM-LiCl coated mesh wire">
-        <figcaption>Wire-level CFD: flow streamlines and temperature field around a single PAM-LiCl coated mesh wire in cross-flow.</figcaption>
-      </figure>
-    </div>
-
-    <div class="result-cols" style="margin-top:24px;">
       <figure class="figure">
         <img src="site-assets/images/pareto-map.png" alt="Pareto design map trading off pressure drop, net power saving, and water consumption across thousands of candidate mesh geometries">
         <figcaption>Multi-objective design sweep across mesh wire diameter and pitch — the recommended prototype sits on the Pareto front, minimising pressure drop for a given power saving.</figcaption>
@@ -531,6 +534,7 @@
     </div>
 
     <div class="mentor-strip">
+      <img class="mentor-avatar" src="site-assets/images/team/chirodeep-bakli.jpg" alt="Prof. Chirodeep Bakli">
       <strong>Mentor —</strong>
       <span>Prof. Chirodeep Bakli, Associate Professor, School of Energy Science &amp; Engineering, IIT Kharagpur</span>
       <a href="mailto:chirodeep@iitkgp.ac.in">chirodeep@iitkgp.ac.in</a>
