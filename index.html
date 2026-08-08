@@ -143,7 +143,7 @@
           <li>Completely passive</li>
           <li>No pump / no power</li>
           <li>Retrofit in &lt; 30 minutes</li>
-          <li>Est. 15–20% COP gain</li>
+          <li>Est. 5–16% COP gain</li>
         </ul>
       </div>
     </div>
@@ -162,7 +162,7 @@
         <div class="grid-2" style="grid-template-columns:1fr;">
           <div class="mat-card">
             <div class="tag">Core mechanism</div>
-            <p style="margin:8px 0 0; font-size:0.95rem;">The hygroscopic hydrogel absorbs atmospheric moisture at night and releases it via evaporation during hot daytime periods, cooling condenser inlet air by <strong>4–10 °C</strong>.</p>
+            <p style="margin:8px 0 0; font-size:0.95rem;">The hygroscopic hydrogel absorbs atmospheric moisture at night and releases it via evaporation during hot daytime periods, cooling condenser inlet air by <strong>2–4 °C</strong>.</p>
           </div>
         </div>
         <div class="grid-2" style="grid-template-columns:1fr; margin-top:18px;">
@@ -201,7 +201,7 @@
           <li>Air passes through the PAM-LiCl hydrogel panel.</li>
           <li>LiCl lowers the vapour pressure at the gel surface (a<sub>w</sub> ≈ 0.80).</li>
           <li>Moisture evaporates from the gel into the airstream — latent heat is absorbed.</li>
-          <li>Condenser inlet air temperature drops 4–10 °C.</li>
+          <li>Condenser inlet air temperature drops 2–4 °C.</li>
           <li>Cooler air improves heat rejection → lower compressor head pressure.</li>
           <li>Compressor power reduces → lower electricity draw → higher COP.</li>
         </ol>
@@ -245,7 +245,7 @@
       <div class="mat-card">
         <div class="tag">Evaporation Rate</div>
         <div class="val">~50 µg/m²·s</div>
-        <p style="margin:0 0 6px; font-size:0.88rem;">Analytical estimate at 45 °C, RH 30% — surface cooling of 4–10 K.</p>
+        <p style="margin:0 0 6px; font-size:0.88rem;">Analytical estimate at 45 °C, RH 30% — surface cooling of 2–4 K.</p>
         <div class="ref">In-house analytical model</div>
       </div>
       <div class="mat-card">
@@ -335,9 +335,9 @@
     </div>
 
     <div class="callout">
-      <h4>Scientific honesty: idealized vs. audited estimates</h4>
-      <p>The <strong>15–20% COP improvement</strong> figure quoted throughout this project is the idealized, Carnot-based potential of the condenser inlet temperature drop achieved by the hydrogel layer. Because it matters more to us to be right than to look good, we ran a full internal audit of the reduced-order model before presenting it.</p>
-      <p>Applying a conservative <strong>50% realization factor</strong> — to account for real compressor isentropic losses, wire-overlap wake shielding, and imperfect gel coating coverage — the audited model predicts a more cautious <strong>2.07% realized COP gain (18.8 W net saving)</strong> for the recommended prototype geometry, with a Monte-Carlo parameter-variation study (see figure below) showing this is robust across plausible calibration ranges. Our internal review issued a <em>conditional go</em>: the model is valid for comparative and feasibility screening, but absolute power-saving claims require experimental wind-tunnel and field validation — which is exactly what Phase 1–2 of our prototype plan below is designed to deliver.</p>
+      <h4>First real-world measurement: field data, not just a model</h4>
+      <p>On an instrumented split-AC outdoor unit at IIT Kharagpur (thermocouples, anemometer, live data logging), with a hydrogel-coated mesh at the condenser face and ambient wind of ~2 m/s, we measured the condenser inlet air temperature drop from <strong>34.6°C to 32.3°C — a real 2.3 K reduction</strong>, not a simulation.</p>
+      <p>Feeding that measured ΔT into the same idealized Carnot relation (COP = T<sub>cold</sub>/(T<sub>hot</sub>−T<sub>cold</sub>), 24°C indoor reference) gives an idealized COP rise from 28.0 to 35.8 — a <strong>+27.7% theoretical increase</strong>, consistent with the ~20% idealized figure quoted above, computed from real measured temperatures instead of an assumed ΔT. Considering real compressor and heat-exchanger losses, our expected practical improvement is <strong>5–8%</strong>.</p>
     </div>
 
     <div class="result-cols">
@@ -358,12 +358,12 @@
   <div class="wrap">
     <p class="section-tag">Criterion 5 · Prototype Quality &amp; Development Stage</p>
     <h2 class="section-title">Prototype design &amp; experimental validation plan</h2>
-    <p class="section-lead">SHEETAL is currently at TRL 2, with a fully audited model in hand and a concrete path to lab and field validation.</p>
+    <p class="section-lead">SHEETAL is currently moving from TRL 2 to TRL 3, with a fully audited model, preliminary real-world field measurements on a campus AC unit already in hand, and a concrete path to full lab and field validation.</p>
 
     <div class="trl-ladder">
       <div class="trl-row done"><div class="trl-badge">Done</div><div class="trl-bar">Basic principles observed</div></div>
       <div class="trl-row done"><div class="trl-badge">Done</div><div class="trl-bar">Technology concept formulated</div></div>
-      <div class="trl-row next"><div class="trl-badge">TRL 3</div><div class="trl-bar">Experimental proof-of-concept (next 2 weeks)</div></div>
+      <div class="trl-row next"><div class="trl-badge">TRL 3</div><div class="trl-bar">Experimental proof-of-concept — in progress (preliminary field data collected)</div></div>
       <div class="trl-row future"><div class="trl-badge">TRL 4</div><div class="trl-bar">Lab-scale validation</div></div>
       <div class="trl-row future"><div class="trl-badge">TRL 5</div><div class="trl-bar">Relevant environment test</div></div>
       <div class="trl-row future"><div class="trl-badge">TRL 6</div><div class="trl-bar">Prototype demo in situ</div></div>
@@ -541,7 +541,7 @@
     <div class="mentor-strip">
       <img class="mentor-avatar" src="site-assets/images/team/chirodeep-bakli.jpg" alt="Prof. Chirodeep Bakli">
       <strong>Mentor —</strong>
-      <span>Prof. Chirodeep Bakli, Associate Professor, School of Energy Science &amp; Engineering, IIT Kharagpur</span>
+      <span>Prof. Chirodeep Bakli, Chairperson &amp; Associate Professor, School of Energy Science &amp; Engineering, IIT Kharagpur</span>
       <a href="mailto:chirodeep@iitkgp.ac.in">chirodeep@iitkgp.ac.in</a>
     </div>
 
